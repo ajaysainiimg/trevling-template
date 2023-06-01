@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikCenter</title>
+    <script src="./assets/libs/bootstrap/slider/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="./assets/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg bg-transparent container-fluid" aria-label="Offcanvas navbar large">
+        <div class="container px-0">
+            <div class="d-flex justify-content-center align-items-center gap-lg-4 gap-2">
+                <a class="navbar-brand nav-btn fw-semibold active d-flex align-items-center" href="javascript:;">Register</a>
+                <a class="navbar-brand nav-btn fw-semibold  d-flex align-items-center" href="javascript:;">Sign in</a>
+            </div>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class=""><i class="fa-solid fa-bars-staggered"></i></span>
+            </button>
+            <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header shadow-sm">
+                    <div class="logo-img pt-lg-0 pt-2 opacity-100">
+                        <a class="navbar-brand" href="index.html"><img src="./assets/img/hero-section/logo.png" alt="logo"
+                                class="img-fluid w-100"></a>
+                    </div>
+                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class=" navbar-nav justify-content-end flex-grow-1 pe-5 gap-lg-4 gap-2 align-items-lg-center align-items-start">
+                        <li class="nav-item">
+                            <a class="nav-link position-relative active fw-bold" aria-current="page" href="javascript:;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative fw-semibold" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative fw-semibold" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative fw-semibold" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="logo-img pt-lg-0 pt-2">
+                        <a class="navbar-brand" href="javascript:;"><img src="./assets/img/hero-section/logo.png" alt="logo" class="img-fluid w-100"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- hero section  -->
+    <div class="container-fluid hero-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6   position-relative">
+                    <div class="hero-data">
+                        <div class="circle position-absolute z-n1"></div>
+                        <div class="img position-relative">
+                            <div class="hero-image m-auto rounded-circle overflow-hidden">
+                                <img src="./assets/img/hero-section/hero.svg" alt="hero-section"
+                                    class="img-fluid w-100 h-100 z-3 ">
+                            </div>
+                            <div class=" position-absolute tree">
+                                <span><i class="fa-solid fa-tree"></i></span>
+                            </div>
+                            <div class="small-image position-absolute ">
+                                <div class="image rounded-4 shadow "><img src="./assets/img/hero-section/bicycle.jpg"
+                                        alt="bicycle" class="img-fluid w-100 rounded-4"></div>
+                            </div>
+                            <div class="user position-absolute">
+                                <ul class="list-unstyled rounded-pill plg-3 p-2 shadow d-flex align-items-center">
+                                    <li class="rounded-circle"><img src="./assets/img/hero-section/bicycle.jpg" alt=""
+                                            class="img-fluid w-100 h-100  rounded-circle "></li>
+                                    <li class="rounded-circle img-2"><img src="./assets/img/hero-section/bicycle.jpg"
+                                            alt="" class="img-fluid w-100 h-100  rounded-circle"></li>
+                                    <li class="rounded-circle img-3"><img src="./assets/img/hero-section/bicycle.jpg"
+                                            alt="" class="img-fluid w-100 h-100  rounded-circle"></li>
+                                    <li class="rounded-circle img-4"><img src="./assets/img/hero-section/bicycle.jpg"
+                                            alt="" class="img-fluid w-100 h-100  rounded-circle"></li>
+                                </ul>
+                            </div>
+                            <div class="icons position-absolute">
+                                <a class="map " href="javascript:;"><i class="fa-solid fa-location-dot"></i></a>
+                            </div>
+                            <div class="message position-absolute">
+                                <ul class=" d-flex align-items-center px-0">
+                                    <li
+                                        class="rounded-circle shadow  d-flex justify-content-center align-items-center ">
+                                        <a href="javascript:;"
+                                            class=" d-flex justify-content-center align-items-center text-decoration-none"><i
+                                                class="fa-solid fa-envelope text-white"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="position-absolute heart">
+                                <ul class="list-unstyled d-flex align-items-center px-0">
+                                    <li class="rounded-circle shadow  d-flex justify-content-center align-items-center">
+                                        <a href="javascript:;"
+                                            class="d-flex justify-content-center align-items-center text-decoration-none"><i
+                                                class="fa-solid fa-heart text-white"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="dot rounded-circle position-absolute"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-md-4 pt-1 hero-right">
+                    <div class="hero-content">
+                        <div class="title fw-bold text-lg-start text-center">Going Somewhere?</div>
+                        <div class="title fw-bold text-lg-start text-center">Book Your <span>Ticket</span> Here!</div>
+                        <div class="pera fw-medium py-3 text-lg-start text-center">We are a trusted ticket booking site
+                            with 10 year experience in the <br> nation. Check your fillght your fight anywher, anytime.
+                        </div>
+                        <div class="form-data pt-lg-4 pt-md-3">
+                            <form class="row g-3 needs-validation myForm" novalidate>
+                                <div class="col-12 input-group">
+                                    <div class="form-label fw-semibold col-12 P-0">Destination</div>
+                                    <label class="input-group-text bg-white border-0" id="basic-addon1"
+                                        for="validationCustom01"><i class="fa-solid fa-location-dot"></i></label>
+                                    <input type="text" class="form-control shadow-0 border-0 " id="validationCustom01"
+                                        value="" placeholder="palembang, South Sumatera, Indonesia" name="u_name"
+                                        required>
+                                </div>
+                            </form>
+                            <div class="row pt-lg-4 pt-3">
+                                <div class="col-12 form-label fw-semibold">Departure Date</div>
+                            </div>
+                            <div class="row mx-0  align-items-end ">
+                                <div class="col-sm-6 col-12 px-0">
+                                    <div
+                                        class="row mx-0 py-1 d-flex justify-content-center align-items-center calender mx-0 rounded-3 py-2">
+                                        <div class="col-auto d-flex justify-content-center align-items-center"><i
+                                                class="fa-solid fa-calendar-days"></i></div>
+                                        <div class="col calender-text d-flex align-items-center p-0 text-nowrap">24
+                                            Dec-2022 -7 jan 2023</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 px-0 ps-sm-3 mt-sm-0 mt-3">
+                                    <div class="row mx-0 gx-0 gap-2 justify-content-center justify-content-sm-start">
+                                        <div class="col-auto">
+                                            <div class="booking-icon ms-md-3">
+                                                <ul class="d-flex align-items-end list-unstyled m-0 gap-2 ">
+                                                    <li
+                                                        class="d-flex align-items-center justify-content-center  rounded-2">
+                                                        <a href="javascript:;"
+                                                            class="d-flex justify-content-center align-items-center text-decoration-none "><i
+                                                                class="fa-solid fa-plane text-white "></i></a></li>
+                                                    <li class="d-flex align-items-center justify-content-center style-1 rounded-2"
+                                                        style="background-color: #FFB240;"><a href="javascript:;"
+                                                            class="d-flex justify-content-center align-items-center text-decoration-none "><i
+                                                                class="fa-solid fa-train-subway text-white"></i></a>
+                                                    </li>
+                                                    <li class="d-flex align-items-center justify-content-center style-1 rounded-2"
+                                                        style="background-color: #FFB240;"><a href="javascript:;"
+                                                            class="d-flex justify-content-center align-items-center text-decoration-none "><i
+                                                                class="fa-solid fa-ship text-white"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto hero-btn d-sm-none d-block ps0">
+                                            <a href="javascript:;" class="text-white btn px-4 customBtn fw-medium text-decoration-none"> Book Ticket </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-lg-5 mt-4 align-items-center mb-4">
+                                <div class="col d-sm-block d-none">
+                                    <div class="hero-btn">
+                                        <a href="javascript:;"
+                                        class="text-white btn px-4 customBtn fw-medium text-decoration-none"> 
+                                        Book Ticket
+                                    </a> 
+                                    </div>
+                                </div>
+                                <div class="col-auto mx-sm-0 mx-auto ">
+                                    <div class="social-icon text-white ">
+                                        <ul class="d-flex gap-2  list-unstyled m-0">
+                                            <li
+                                                class=" rounded-circle d-flex justify-content-center align-items-center border-1 facebook">
+                                                <a href="javascript:;"
+                                                    class="d-flex justify-content-center align-items-center text-decoration-none"><i
+                                                        class="fa-brands fa-facebook  fac"></i></a></li>
+                                            <li
+                                                class=" rounded-circle d-flex justify-content-center align-items-center border-1 insta">
+                                                <a href="javascript:;"
+                                                    class="d-flex justify-content-center align-items-center text-decoration-none"><i
+                                                        class="fa-brands fa-instagram "></i></a></li>
+                                            <li
+                                                class=" rounded-circle d-flex justify-content-center align-items-center border-1 twitter">
+                                                <a href="javascript:;"
+                                                    class="d-flex justify-content-center align-items-center text-decoration-none"><i
+                                                        class="fa-brands fa-twitter "></i></a></li>
+                                            <li
+                                                class=" rounded-circle d-flex justify-content-center align-items-center border-1 location">
+                                                <a href="javascript:;"
+                                                    class="d-flex justify-content-center align-items-center text-decoration-none"><i
+                                                        class="fa-solid fa-location-dot "></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ticket booking  -->
+    <div class="container-fluid ticket-booking bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-9 shadow mx-auto bg-white rounded-3 mb-4 text-center">
+                    <nav class="border-0 d-flex justify-content-center align-items-center">
+                        <div class="booking-menu border-0 nav nav-tabs py-2 gap-md-4 gap-0" id="nav-tab" role="tablist">
+                            <a class="nav-link active button-style border-0 position-relative z-3" id="nav-home-tab"
+                                data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab"
+                                aria-controls="nav-home" aria-selected="true">
+                                <div class="icon-image position-relative ">
+                                    <img src="./assets/img/card-section/flight.svg" alt="flight"
+                                        class="img-fluid w-100 h-100">
+                                        <span class="d-block pt-1"> Flight</span>
+                                </div>
+                            </a>
+                            <button class="nav-link button-style border-0 position-relative z-3" id="nav-profile-tab"
+                                data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab"
+                                aria-controls="nav-profile" aria-selected="false">
+                                <div class="icon-image position-relative">
+                                    <img src="./assets/img/card-section/hotel.svg" alt="flight"
+                                        class="img-fluid w-100 h-100">
+                                </div>
+                                <span class="d-block pt-1">Hotel</span>
+                            </button>
+                            <button class="nav-link button-style border-0 position-relative z-3" id="nav-contact-tab"
+                                data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab"
+                                aria-controls="nav-contact" aria-selected="false">
+                                <div class="icon-image position-relative">
+                                    <img src="./assets/img/card-section/train.svg" alt="flight"
+                                        class="img-fluid w-100 h-100">
+                                </div>
+                                <span class="d-block pt-1">Train</span>
+                            </button>
+                            <button class="nav-link button-style border-0 position-relative z-3" id="nav-disabled-tab"
+                                data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab"
+                                aria-controls="nav-disabled" aria-selected="false">
+                                <div class="icon-image position-relative">
+                                    <img src="./assets/img/card-section/cab.svg" alt="flight"
+                                        class="img-fluid w-100 h-100">
+                                </div>
+                                <span class="d-block pt-1">Cabs</span>
+                            </button>
+                            <button class="nav-link button-style border-0 position-relative z-3" id="nav-disabled-tab"
+                                data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab"
+                                aria-controls="nav-disabled" aria-selected="false">
+                                <div class="icon-image position-relative">
+                                    <img src="./assets/img/card-section/bus.svg" alt="flight"
+                                        class="img-fluid w-100 h-100">
+                                </div>
+                                <span class="d-block pt-1">Bus</span>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="tab-content bg-white shadow rounded-4  cards-1" id="nav-tabContent">
+                <!-- hotal  -->
+                <div class="tab-pane fade position-relative" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                    tabindex="0">
+                    <div class="row card-row px-lg-4 pb-lg-4 mx-3">
+                        <div class="col-12">
+                            <div class="row text-md-start text-center">
+                                <div class="col-md col-12  check-radio">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label small-title" for="inlineRadio1">One Way</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label small-title" for="inlineRadio2">Round Trip </label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+                                        <label class="form-check-label small-title" for="inlineRadio3">Multi City</label>
+                                      </div>
+                                </div>
+                                <div class="col-md-auto col-12 small-title">
+                                    <div class="small-title">Book International and Domestic Flights</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 rounded-3 my-2 mx-0 px-0 select-city position-relative">
+                            <div class="row px-0 mx-0">
+                                <div class="col-lg-3 col-sm-4 col-6 select-city-1 border-style1  py-3 .card-style position-relative">
+                                    <div class="content">
+                                        <div class="small-title pb-2">Form</div>
+                                        <div class="main-card-title ">Delhi</div>
+                                        <div class="small-title small-title1 ">DEL, Delhi Airport India</div>
+                                    </div>
+                                    <div class="switch position-absolute ">
+                                        <ul class="d-flex justify-content-center align-items-center list-unstyled">
+                                            <li class="d-flex justify-content-center align-items-center"><a href="javascript:;"  class="bg-white shadow d-flex justify-content-center align-items-center text-decoration-none rounded-circle"><i class="fa-solid fa-repeat"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-4 col-6  border-style1 py-3  .card-style">
+                                    <div class="content ps-3">
+                                        <div class="small-title pb-2">To</div>
+                                        <div class="main-card-title "> Bengaluru</div>
+                                        <div class="small-title small-title1 ">BLR, Bengaluru International Airport</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-auto col-sm-4 col-6 border-style1 py-3 .card-style">
+                                    <div class="content">
+                                          <div class="pb-2 small-title">Departure</div>
+                                          <div class=" main-card-title ">18 <span class="fw-semibold">May'23</span></div>
+                                          <div class="small-title small-title1 ">Thursday</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-auto col-sm-6 col-6  border-style1 py-3 .card-style">
+                                    <div class="content">
+                                          <div class="pb-2 small-title">Return</div>
+                                          <div class=" main-card-title ">19 <span class="fw-semibold">May'23</span></div>
+                                          <div class="small-title small-title1 ">Friday</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg col-sm-6 col-12 py-3 border-style1 rounded-end-3 .card-style">
+                                    <div class="content">
+                                          <div class="pb-2 small-title">Travellers & Class</div>
+                                          <div class=" main-card-title lh-1 flex-nowrap">4 <span class="fw-semibold">Travellers</span></div>
+                                          <div class="small-title flex-nowrap">Premium Economy</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="col-12 mb-lg-2 mb-4">
+                           <div class="row  card-button mt-md-0">
+                               <div class="col-12">
+                                   <div class="row justify-content-center align-items-center">
+                                       <div class="col-md col-12">
+                                           <div class="content d-flex justify-content-center align-items-center">
+                                               <div class="col check-radio " >
+                                                   <div class="form-check form-check-inline">
+                                                       <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option1">
+                                                       <label class="form-check-label small-title" for="inlineRadio4" >Regular Fares</label>
+                                                     </div>
+                                                     <div class="form-check form-check-inline">
+                                                       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option2">
+                                                       <label class="form-check-label small-title" for="inlineRadio5">Armed Forces Fares </label>
+                                                     </div>
+                                                     <div class="form-check form-check-inline">
+                                                       <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option3" >
+                                                       <label class="form-check-label small-title" for="inlineRadio6">Student Fares</label>
+                                                     </div>
+                                                     <div class="form-check form-check-inline">
+                                                       <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio7" value="option3" >
+                                                       <label class="form-check-label small-title" for="inlineRadio7">Senior Citizen Fares</label>
+                                                     </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-auto col-12 ">
+                                           <div class="content d-flex justify-content-center align-items-center gap-3">
+                                               <div class="small-title fw-semibold">Trending Searches: </div>
+                                               <div class="">
+                                                   <a href="javascript:;" class="small-title text-decoration-none">Delhi <span><i class="fa-solid fa-arrow-right"></i></span> Dubai</a>
+                                               </div>
+                                            </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="row  ">
+                            <div class="col-auto card-btn position-absolute  ">
+                                    <a href="javascript:;"
+                                        class="text-white btn px-4 customBtn fw-medium text-decoration-none"> 
+                                        Book Ticket
+                                    </a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- flight  -->
+                <div class="tab-pane fade show active position-relative" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                tabindex="0">
+                <div class="row card-row px-lg-4 pb-lg-4 mx-3">
+                    <div class="col-12">
+                        <div class="row text-md-start text-center">
+                            <div class="col-md col-12  check-radio">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio8" value="option1">
+                                    <label class="form-check-label small-title" for="inlineRadio8">One Way</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio9" value="option2">
+                                    <label class="form-check-label small-title" for="inlineRadio9">Round Trip </label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio10" value="option3" >
+                                    <label class="form-check-label small-title" for="inlineRadio10">Multi City</label>
+                                  </div>
+                            </div>
+                            <div class="col-md-auto col-12 small-title">
+                                <div class="small-title">Book International and Domestic Flights</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 rounded-3 my-2 mx-0 px-0 select-city position-relative">
+                        <div class="row px-0 mx-0">
+                            <div class="col-lg-3 col-sm-4 col-6 select-city-1 border-style1  py-3 .card-style position-relative">
+                                <div class="content">
+                                    <div class="small-title pb-2">Form</div>
+                                    <div class="main-card-title ">Delhi</div>
+                                    <div class="small-title small-title1 ">DEL, Delhi Airport India</div>
+                                </div>
+                                <div class="switch position-absolute ">
+                                    <ul class="d-flex justify-content-center align-items-center list-unstyled">
+                                        <li class="d-flex justify-content-center align-items-center"><a href="javascript:;"  class="bg-white shadow d-flex justify-content-center align-items-center text-decoration-none rounded-circle"><i class="fa-solid fa-repeat"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-6 select-city-1  border-style1 py-3  .card-style">
+                                <div class="content ps-3">
+                                    <div class="small-title pb-2">To</div>
+                                    <div class="main-card-title "> Bengaluru</div>
+                                    <div class="small-title small-title1 ">BLR, Bengaluru International Airport</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-auto col-sm-4 col-6 border-style1 py-3 .card-style">
+                                <div class="content">
+                                      <div class="pb-2 small-title">Departure</div>
+                                      <div class=" main-card-title ">18 <span class="fw-semibold">May'23</span></div>
+                                      <div class="small-title small-title1 ">Thursday</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-auto col-sm-6 col-6  border-style1 py-3 .card-style">
+                                <div class="content">
+                                      <div class="pb-2 small-title">Return</div>
+                                      <div class=" main-card-title ">19 <span class="fw-semibold">May'23</span></div>
+                                      <div class="small-title small-title1 ">Friday</div>
+                                </div>
+                            </div>
+                            <div class="col-lg col-sm-6 col-12 py-3 border-style1 rounded-end-3 .card-style">
+                                <div class="content">
+                                      <div class="pb-2 small-title">Travellers & Class</div>
+                                      <div class=" main-card-title lh-1 flex-nowrap">4 <span class="fw-semibold">Travellers</span></div>
+                                      <div class="small-title flex-nowrap">Premium Economy</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="col-12 mb-lg-2 mb-4">
+                       <div class="row  card-button mt-md-0">
+                           <div class="col-12">
+                               <div class="row justify-content-center align-items-center">
+                                   <div class="col-lg col-12">
+                                       <div class="content d-flex justify-content-center align-items-center">
+                                           <div class="col check-radio " >
+                                               <div class="form-check form-check-inline">
+                                                   <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio11" value="option1">
+                                                   <label class="form-check-label small-title" for="inlineRadio11" >Regular Fares</label>
+                                                 </div>
+                                                 <div class="form-check form-check-inline">
+                                                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio12" value="option2">
+                                                   <label class="form-check-label small-title" for="inlineRadio12">Armed Forces Fares </label>
+                                                 </div>
+                                                 <div class="form-check form-check-inline">
+                                                   <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio13" value="option3" >
+                                                   <label class="form-check-label small-title" for="inlineRadio13">Student Fares</label>
+                                                 </div>
+                                                 <div class="form-check form-check-inline">
+                                                   <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio14" value="option3" >
+                                                   <label class="form-check-label small-title" for="inlineRadio14">Senior Citizen Fares</label>
+                                                 </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-lg-auto col-12 ">
+                                       <div class="content d-flex justify-content-center align-items-center gap-3">
+                                           <div class="small-title fw-semibold">Trending Searches: </div>
+                                           <div class="">
+                                               <a href="javascript:;" class="small-title text-decoration-none">Delhi <span><i class="fa-solid fa-arrow-right"></i></span> Dubai</a>
+                                           </div>
+                                        </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="colauto card-btn position-absolute  ">
+                        <a href="javascript:;"
+                            class="text-white btn px-4 customBtn fw-medium text-decoration-none"> 
+                            Book Ticket
+                        </a> 
+                </div>
+                <!-- <div class="row  ">
+                </div> -->
+                </div>
+                <!-- train  -->
+                <div class="tab-pane fade position-relative" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                    tabindex="0">
+                    <div class="row card-row px-lg-4 pb-lg-4 mx-3">
+                        <div class="col-12">
+                            <div class="row text-md-start text-center">
+                                <div class="col-md col-12  check-radio">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio15" value="option1">
+                                        <label class="form-check-label small-title" for="inlineRadio15">One Way</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio16" value="option2">
+                                        <label class="form-check-label small-title" for="inlineRadio16">Round Trip </label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio17" value="option3" >
+                                        <label class="form-check-label small-title" for="inlineRadio17">Multi City</label>
+                                      </div>
+                                </div>
+                                <div class="col-md-auto col-12 small-title">
+                                    <div class="small-title">Book International and Domestic Flights</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 rounded-3 my-2 mx-0 px-0 select-city position-relative">
+                            <div class="row px-0 mx-0">
+                                <div class="col-lg-3 col-sm-4 col-6 select-city-1 border-style1  py-3 .card-style position-relative">
+                                    <div class="content">
+                                        <div class="small-title pb-2">Form</div>
+                                        <div class="main-card-title ">Delhi</div>
+                                        <div class="small-title small-title1 ">DEL, Delhi Airport India</div>
+                                    </div>
+                                    <div class="switch position-absolute ">
+                                        <ul class="d-flex justify-content-center align-items-center list-unstyled">
+                                            <li class="d-flex justify-content-center align-items-center"><a href="javascript:;"  class="bg-white shadow d-flex justify-content-center align-items-center text-decoration-none rounded-circle"><i class="fa-solid fa-repeat"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-4 col-6  border-style1 py-3  .card-style">
+                                    <div class="content ps-3">
+                                        <div class="small-title pb-2">To</div>
+                                        <div class="main-card-title "> Bengaluru</div>
+                                        <div class="small-title small-title1 ">BLR, Bengaluru International Airport</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-auto col-sm-4 col-6 border-style1 py-3 .card-style">
+                                    <div class="content">
+                                          <div class="pb-2 small-title">Departure</div>
+                                          <div class=" main-card-title ">18 <span class="fw-semibold">May'23</span></div>
+                                          <div class="small-title small-title1 ">Thursday</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-auto col-sm-6 col-6  border-style1 py-3 .card-style">
+                                    <div class="content">
+                                          <div class="pb-2 small-title">Return</div>
+                                          <div class=" main-card-title ">19 <span class="fw-semibold">May'23</span></div>
+                                          <div class="small-title small-title1 ">Friday</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg col-sm-6 col-12 py-3 border-style1 rounded-end-3 .card-style">
+                                    <div class="content">
+                                          <div class="pb-2 small-title">Travellers & Class</div>
+                                          <div class=" main-card-title lh-1 flex-nowrap">4 <span class="fw-semibold">Travellers</span></div>
+                                          <div class="small-title flex-nowrap">Premium Economy</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="col-12 mb-lg-2 mb-4">
+                           <div class="row  card-button mt-md-0">
+                               <div class="col-12">
+                                   <div class="row justify-content-center align-items-center">
+                                       <div class="col-md col-12">
+                                           <div class="content d-flex justify-content-center align-items-center">
+                                               <div class="col check-radio " >
+                                                   <div class="form-check form-check-inline">
+                                                       <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio18" value="option1">
+                                                       <label class="form-check-label small-title" for="inlineRadio18" >Regular Fares</label>
+                                                     </div>
+                                                     <div class="form-check form-check-inline">
+                                                       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio19" value="option2">
+                                                       <label class="form-check-label small-title" for="inlineRadio19">Armed Forces Fares </label>
+                                                     </div>
+                                                     <div class="form-check form-check-inline">
+                                                       <input class="form-check-input " type="radio" name="inlineRadioOptions" id="20" value="option3" >
+                                                       <label class="form-check-label small-title" for="inlineRadio20">Student Fares</label>
+                                                     </div>
+                                                     <div class="form-check form-check-inline">
+                                                       <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio21" value="option3" >
+                                                       <label class="form-check-label small-title" for="inlineRadio22">Senior Citizen Fares</label>
+                                                     </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-auto col-12 ">
+                                           <div class="content d-flex justify-content-center align-items-center gap-3">
+                                               <div class="small-title fw-semibold">Trending Searches: </div>
+                                               <div class="">
+                                                   <a href="javascript:;" class="small-title text-decoration-none">Delhi <span><i class="fa-solid fa-arrow-right"></i></span> Dubai</a>
+                                               </div>
+                                            </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="row  ">
+                            <div class="col-auto card-btn position-absolute  ">
+                                    <a href="javascript:;"
+                                        class="text-white btn px-4 customBtn fw-medium text-decoration-none"> 
+                                        Book Ticket
+                                    </a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- cab  -->
+                <div class="tab-pane fade position-relative" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab"
+                    tabindex="0">
+                    <div class="row card-row px-lg-4 pb-lg-4 mx-3">
+                        <div class="col-12">
+                            <div class="row text-md-start text-center">
+                                <div class="col-md col-12  check-radio">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio23" value="option1">
+                                        <label class="form-check-label small-title" for="inlineRadio23">One Way</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio24" value="option2">
+                                        <label class="form-check-label small-title" for="inlineRadio24">Round Trip </label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio25" value="option3" >
+                                        <label class="form-check-label small-title" for="inlineRadio25">Multi City</label>
+                                      </div>
+                                </div>
+                                <div class="col-md-auto col-12 small-title">
+                                    <div class="small-title">Book International and Domestic Flights</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 rounded-3 my-2 mx-0 px-0 select-city position-relative">
+                            <div class="row px-0 mx-0">
+                                <div class="col-lg-3 col-sm-4 col-6 select-city-1 border-style1  py-3 .card-style position-relative">
+                                    <div class="content">
+                                        <div class="small-title pb-2">Form</div>
+                                        <div class="main-card-title ">Delhi</div>
+                                        <div class="small-title small-title1 ">DEL, Delhi Airport India</div>
+                                    </div>
+                                    <div class="switch position-absolute ">
+                                        <ul class="d-flex justify-content-center align-items-center list-unstyled">
+                                            <li class="d-flex justify-content-center align-items-center"><a href="javascript:;"  class="bg-white shadow d-flex justify-content-center align-items-center text-decoration-none rounded-circle"><i class="fa-solid fa-repeat"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-4 col-6  border-style1 py-3  .card-style">
+                                    <div class="content ps-3">
+                                        <div class="small-title pb-2">To</div>
+                                        <div class="main-card-title "> Bengaluru</div>
+                                        <div class="small-title small-title1 ">BLR, Bengaluru International Airport</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-auto col-sm-4 col-6 border-style1 py-3 .card-style">
+                                    <div class="content">
+                                          <div class="pb-2 small-title">Departure</div>
+                                          <div class=" main-card-title ">18 <span class="fw-semibold">May'23</span></div>
+                                          <div class="small-title small-title1 ">Thursday</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-auto col-sm-6 col-6  border-style1 py-3 .card-style">
+                                    <div class="content">
+                                          <div class="pb-2 small-title">Return</div>
+                                          <div class=" main-card-title ">19 <span class="fw-semibold">May'23</span></div>
+                                          <div class="small-title small-title1 ">Friday</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg col-sm-6 col-12 py-3 border-style1 rounded-end-3 .card-style">
+                                    <div class="content">
+                                          <div class="pb-2 small-title">Travellers & Class</div>
+                                          <div class=" main-card-title lh-1 flex-nowrap">4 <span class="fw-semibold">Travellers</span></div>
+                                          <div class="small-title flex-nowrap">Premium Economy</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="col-12 mb-lg-2 mb-4">
+                           <div class="row  card-button mt-md-0">
+                               <div class="col-12">
+                                   <div class="row justify-content-center align-items-center">
+                                       <div class="col-md col-12">
+                                           <div class="content d-flex justify-content-center align-items-center">
+                                               <div class="col check-radio " >
+                                                   <div class="form-check form-check-inline">
+                                                       <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio26" value="option1">
+                                                       <label class="form-check-label small-title" for="inlineRadio26" >Regular Fares</label>
+                                                     </div>
+                                                     <div class="form-check form-check-inline">
+                                                       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio27" value="option2">
+                                                       <label class="form-check-label small-title" for="inlineRadio27">Armed Forces Fares </label>
+                                                     </div>
+                                                     <div class="form-check form-check-inline">
+                                                       <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio28" value="option3" >
+                                                       <label class="form-check-label small-title" for="inlineRadio28">Student Fares</label>
+                                                     </div>
+                                                     <div class="form-check form-check-inline">
+                                                       <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio29" value="option3" >
+                                                       <label class="form-check-label small-title" for="inlineRadio29">Senior Citizen Fares</label>
+                                                     </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-auto col-12 ">
+                                           <div class="content d-flex justify-content-center align-items-center gap-3">
+                                               <div class="small-title fw-semibold">Trending Searches: </div>
+                                               <div class="">
+                                                   <a href="javascript:;" class="small-title text-decoration-none">Delhi <span><i class="fa-solid fa-arrow-right"></i></span> Dubai</a>
+                                               </div>
+                                            </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="row  ">
+                            <div class="col-auto card-btn position-absolute  ">
+                                    <a href="javascript:;"
+                                        class="text-white btn px-4 customBtn fw-medium text-decoration-none"> 
+                                        Book Ticket
+                                    </a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- bus  -->
+                <div class="tab-pane fade position-relative" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab"
+                tabindex="0">
+                <div class="row card-row px-lg-4 pb-lg-4 mx-3">
+                    <div class="col-12">
+                        <div class="row text-md-start text-center">
+                            <div class="col-md col-12  check-radio">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio30" value="option1">
+                                    <label class="form-check-label small-title" for="inlineRadio30">One Way</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio31" value="option2">
+                                    <label class="form-check-label small-title" for="inlineRadio31">Round Trip </label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio32" value="option3" >
+                                    <label class="form-check-label small-title" for="inlineRadio32">Multi City</label>
+                                  </div>
+                            </div>
+                            <div class="col-md-auto col-12 small-title">
+                                <div class="small-title">Book International and Domestic Flights</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 rounded-3 my-2 mx-0 px-0 select-city position-relative">
+                        <div class="row px-0 mx-0">
+                            <div class="col-lg-3 col-sm-4 col-6 select-city-1 border-style1  py-3 .card-style position-relative">
+                                <div class="content">
+                                    <div class="small-title pb-2">Form</div>
+                                    <div class="main-card-title ">Delhi</div>
+                                    <div class="small-title small-title1 ">DEL, Delhi Airport India</div>
+                                </div>
+                                <div class="switch position-absolute ">
+                                    <ul class="d-flex justify-content-center align-items-center list-unstyled">
+                                        <li class="d-flex justify-content-center align-items-center"><a href="javascript:;"  class="bg-white shadow d-flex justify-content-center align-items-center text-decoration-none rounded-circle"><i class="fa-solid fa-repeat"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-6  border-style1 py-3  .card-style">
+                                <div class="content ps-3">
+                                    <div class="small-title pb-2">To</div>
+                                    <div class="main-card-title "> Bengaluru</div>
+                                    <div class="small-title small-title1 ">BLR, Bengaluru International Airport</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-auto col-sm-4 col-6 border-style1 py-3 .card-style">
+                                <div class="content">
+                                      <div class="pb-2 small-title">Departure</div>
+                                      <div class=" main-card-title ">18 <span class="fw-semibold">May'23</span></div>
+                                      <div class="small-title small-title1 ">Thursday</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-auto col-sm-6 col-6  border-style1 py-3 .card-style">
+                                <div class="content">
+                                      <div class="pb-2 small-title">Return</div>
+                                      <div class=" main-card-title ">19 <span class="fw-semibold">May'23</span></div>
+                                      <div class="small-title small-title1 ">Friday</div>
+                                </div>
+                            </div>
+                            <div class="col-lg col-sm-6 col-12 py-3 border-style1 rounded-end-3 .card-style">
+                                <div class="content">
+                                      <div class="pb-2 small-title">Travellers & Class</div>
+                                      <div class=" main-card-title lh-1 flex-nowrap">4 <span class="fw-semibold">Travellers</span></div>
+                                      <div class="small-title flex-nowrap">Premium Economy</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="col-12 mb-lg-2 mb-4">
+                       <div class="row  card-button mt-md-0">
+                           <div class="col-12">
+                               <div class="row justify-content-center align-items-center">
+                                   <div class="col-md col-12">
+                                       <div class="content d-flex justify-content-center align-items-center">
+                                           <div class="col check-radio " >
+                                               <div class="form-check form-check-inline">
+                                                   <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio33" value="option1">
+                                                   <label class="form-check-label small-title" for="inlineRadio33" >Regular Fares</label>
+                                                 </div>
+                                                 <div class="form-check form-check-inline">
+                                                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio34" value="option2">
+                                                   <label class="form-check-label small-title" for="inlineRadio34">Armed Forces Fares </label>
+                                                 </div>
+                                                 <div class="form-check form-check-inline">
+                                                   <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio35" value="option3" >
+                                                   <label class="form-check-label small-title" for="inlineRadio35">Student Fares</label>
+                                                 </div>
+                                                 <div class="form-check form-check-inline">
+                                                   <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio36" value="option3" >
+                                                   <label class="form-check-label small-title" for="inlineRadio36">Senior Citizen Fares</label>
+                                                 </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-md-auto col-12 ">
+                                       <div class="content d-flex justify-content-center align-items-center gap-3">
+                                           <div class="small-title fw-semibold">Trending Searches: </div>
+                                           <div class="">
+                                               <a href="javascript:;" class="small-title text-decoration-none">Delhi <span><i class="fa-solid fa-arrow-right"></i></span> Dubai</a>
+                                           </div>
+                                        </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="col-auto">
+                    <div class="row  ">
+                        <div class="col-auto card-btn position-absolute  ">
+                                <a href="javascript:;"
+                                    class="text-white btn px-4 customBtn fw-medium text-decoration-none"> 
+                                    Book Ticket
+                                </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- offers  -->
+    <div class="container-fluid py-5 offers-card">
+        <div class="container px-0">
+            <div class="row g-2">
+                <div class="col-lg-4 col-md-6 col-12 position-relative">
+                    <div class="card card-1" >
+                    <div class="card-body"> 
+                        <div class="row">
+                            <div class="col-12 position-relative">
+                                <div class="row">
+                                    <div class="col-auto my-3">
+                                        <div class="bg-white offer-btn ">
+                                            <span class=" fw-semibold">OFFER DEALS</span> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 ">
+                                <div class="text-white bank-title fw-medium ">Up to 15% off</div>
+                            </div>
+                            <div class="col-12 ">
+                                <div class="text-white  lh- card-pera">on Flight with ICICI Bank </div>
+                                <div class="text-white lh-2 card-pera">Credit Card EMI Transactions </div>
+                            </div>
+                            <div class="col-12 pt-4">
+                                <div class="row">
+                                    <div class="col-auto bank-btn ">
+                                        <a href="javascript:;" class="stretched-link">
+                                            <img src="./assets/img/offers/ici.png" alt="ici" class="img-fluid w-100 h-100">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    
+                 
+
+                       
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 position-relative">
+                    <div class="card card-2" >
+                    <div class="card-body"> 
+                        <div class="row">
+                            <div class="col-12 position-relative">
+                                <div class="row">
+                                    <div class="col-auto my-3">
+                                        <div class="bg-white offer-btn ">
+                                            <span class=" fw-semibold">OFFER DEALS</span> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 ">
+                                <div class="text-white bank-title fw-medium ">Up to 15% off</div>
+                            </div>
+                            <div class="col-12 "> 
+                                <div class="text-white  lh- card-pera">on Flight with ICICI Bank </div>
+                                <div class="text-white lh-2 card-pera">Credit Card EMI Transactions </div>
+                            </div>
+                            </div>
+                            <div class="col-12 pt-4">
+                                <div class="row">
+                                    <div class="col-auto bank-btn">
+                                        <a href="javascript:;" class="stretched-link">
+                                            <img src="./assets/img/offers/CTCITI_CTEMI_BSB_FLIGHTS_09032023 1.png" alt="ici" class="img-fluid w-100 h-100">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    
+                 
+
+                       
+                </div>
+                 <div class="col-lg-4  col-12 position-relative">
+                          <div class="card card-3" >
+                          <div class="card-body"> 
+                              <div class="row">
+                                  <div class="col-12 position-relative">
+                                      <div class="row">
+                                        <div class="col-auto my-3">
+                                            <div class="bg-white offer-btn ">
+                                                <span class=" fw-semibold">OFFER DEALS</span> 
+                                            </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 ">
+                                      <div class="text-white bank-title fw-medium ">Up to 15% off</div>
+                                  </div>
+                                  <div class="col-12 ">
+                                      <div class="text-white  lh- card-pera">on Flight with ICICI Bank </div>
+                                      <div class="text-white lh-2 card-pera">Credit Card EMI Transactions </div>
+                                  </div>
+                                  <div class="col-12 pt-4">
+                                      <div class="row">
+                                          <div class="col-auto bank-btn">
+                                              <a href="javascript:;" class="stretched-link">
+                                                  <img src="./assets/img/offers/ici.png" alt="ici" class="img-fluid w-100 h-100">
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>   
+                            </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    <!-- offers-place  -->
+  <div class="container-fluid bg-light pb-5 py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 py-3">
+                        <div class="download-title fw-bolder">Handpicked Collections for You</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-3">
+           <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
+            <div class="card h-100 border-0 place-card overflow-hidden">
+                <div class="row">
+                    <div class="col-12 overflow-hidden">
+                        <div class="offer-img">
+                            <img src="./assets/img/offer-place/1.jpg" alt="offer" class="img-fluid w-100 h-100 rounded-top-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0 py-3 section-1">
+                   <div class="col">
+                    <div class="content">
+                        <div class="footer-heading fw-semibold">Bangkok</div>
+                        <div class="copy-right lh-2">Round Trip | May 19 - Jun 19</div>
+                        <div class="bank-title fw-bold">$1,016.36</div>
+                    </div>
+                   </div>
+                   <div class="col-auto  d-flex justify-content-end align-items-end  ">
+                    <div class="button"><a href="javascript:;" class="btn z-3 position-relative customBtn outlinBtn flex-nowrap "> Book Now</a></div>
+                    <a href="cartdetails.html" class="stretched-link"> </a>
+                   </div>
+                </div>
+        </div>
+           </div>
+           <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
+            <div class="card border-0 h-100 place-card overflow-hidden"> 
+                <div class="row gy-3 px-0">
+                    <div class="col-12 overflow-hidden">
+                        <div class="offer-img">
+                            <img src="./assets/img/offer-place/2.jpg" alt="offer" class="img-fluid w-100 h-100 rounded-top-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0 py-3 section-1">
+                   <div class="col">
+                    <div class="content">
+                        <div class="footer-heading fw-semibold ">Bangkok</div>
+                        <div class="copy-right lh-2">Round Trip | May 19 - Jun 19</div>
+                        <div class="bank-title fw-bold">$1,016.36</div>
+                    </div>
+                   </div>
+                   <div class="col-auto  d-flex justify-content-end align-items-end  ">
+                    <div class="button"><a href="javascript:;" class="btn z-3 position-relative customBtn outlinBtn flex-nowrap "> Book Now</a></div>
+                    <a href="cartdetails.html" class="stretched-link"> </a>
+                   </div>
+                </div>
+        </div>
+           </div>
+           <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
+            <div class="card border-0 h-100 place-card overflow-hidden">
+                <div class="row">
+                    <div class="col-12 overflow-hidden">
+                        <div class="offer-img">
+                            <img src="./assets/img/offer-place/4.jpg" alt="offer" class="img-fluid w-100 h-100 rounded-top-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0 py-3 section-1">
+                   <div class="col">
+                    <div class="content">
+                        <div class="footer-heading fw-semibold">Bangkok</div>
+                        <div class="copy-right lh-2">Round Trip | May 19 - Jun 19</div>
+                        <div class="bank-title fw-bold">$1,016.36</div>
+                    </div>
+                   </div>
+                   <div class="col-auto  d-flex justify-content-end align-items-end  ">
+                    <div class="button"><a href="javascript:;" class="btn z-3 position-relative customBtn outlinBtn flex-nowrap "> Book Now</a></div>
+                    <a href="cartdetails.html" class="stretched-link"> </a>
+                   </div>
+                </div>
+        </div>
+           </div>
+           <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
+            <div class="card border-0 h-100 place-card overflow-hidden">
+                <div class="row">
+                    <div class="col-12 overflow-hidden">
+                        <div class="offer-img">
+                            <img src="./assets/img/offer-place/5.jpg" alt="offer" class="img-fluid w-100 h-100 rounded-top-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0 py-3 section-1">
+                   <div class="col">
+                    <div class="content">
+                        <div class="footer-heading fw-semibold">Bangkok</div>
+                        <div class="copy-right lh-2">Round Trip | May 19 - Jun 19</div>
+                        <div class="bank-title fw-bold">$1,016.36</div>
+                    </div>
+                   </div>
+                   <div class="col-auto  d-flex justify-content-end align-items-end  ">
+                    <div class="button"><a href="javascript:;" class="btn z-3 position-relative customBtn outlinBtn flex-nowrap "> Book Now</a></div>
+                    <a href="cartdetails.html" class="stretched-link"> </a>
+                   </div>
+                </div>
+        </div>
+           </div>
+           <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
+            <div class="card border-0 h-100 place-card overflow-hidden"> 
+                <div class="row gy-3 px-0">
+                    <div class="col-12 overflow-hidden">
+                        <div class="offer-img">
+                            <img src="./assets/img/offer-place/6.jpg" alt="offer" class="img-fluid w-100 h-100 rounded-top-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0 py-3 section-1">
+                   <div class="col">
+                    <div class="content">
+                        <div class="footer-heading fw-semibold ">Bangkok</div>
+                        <div class="copy-right lh-2">Round Trip | May 19 - Jun 19</div>
+                        <div class="bank-title fw-bold">$1,016.36</div>
+                    </div>
+                   </div>
+                   <div class="col-auto  d-flex justify-content-end align-items-end  ">
+                    <div class="button"><a href="javascript:;" class="btn z-3 position-relative customBtn outlinBtn flex-nowrap "> Book Now</a></div>
+                    <a href="cartdetails.html" class="stretched-link"> </a>
+                   </div>
+                </div>
+        </div>
+           </div>
+           <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
+            <div class="card border-0 h-100 place-card overflow-hidden">
+                <div class="row">
+                    <div class="col-12 overflow-hidden">
+                        <div class="offer-img">
+                            <img src="./assets/img/offer-place/7.jpg" alt="offer" class="img-fluid w-100 h-100 rounded-top-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0 py-3 section-1">
+                   <div class="col">
+                    <div class="content">
+                        <div class="footer-heading fw-semibold">Bangkok</div>
+                        <div class="copy-right lh-2">Round Trip | May 19 - Jun 19</div>
+                        <div class="bank-title fw-bold">$1,016.36</div>
+                    </div>
+                   </div>
+                   <div class="col-auto  d-flex justify-content-end align-items-end  ">
+                    <div class="button"><a href="javascript:;" class="btn z-3 position-relative customBtn outlinBtn flex-nowrap "> Book Now</a></div>
+                    <a href="cartdetails.html" class="stretched-link"> </a>
+                   </div>
+                </div>
+        </div>
+           </div>
+           <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
+            <div class="card border-0 h-100 place-card overflow-hidden">
+                <div class="row">
+                    <div class="col-12 overflow-hidden">
+                        <div class="offer-img">
+                            <img src="./assets/img/offer-place/8.jpg" alt="offer" class="img-fluid w-100 h-100 rounded-top-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0 py-3 section-1">
+                   <div class="col">
+                    <div class="content">
+                        <div class="footer-heading fw-semibold">Bangkok</div>
+                        <div class="copy-right lh-2">Round Trip | May 19 - Jun 19</div>
+                        <div class="bank-title fw-bold">$1,016.36</div>
+                    </div>
+                   </div>
+                   <div class="col-auto  d-flex justify-content-end align-items-end  ">
+                    <div class="button"><a href="javascript:;" class="btn z-3 position-relative customBtn outlinBtn flex-nowrap "> Book Now</a></div>
+                    <a href="javascript:;" class="stretched-link"> </a>
+                   </div>
+                </div>
+        </div>
+           </div>
+           <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
+            <div class="card border-0 h-100 place-card overflow-hidden">
+                <div class="row">
+                    <div class="col-12 overflow-hidden">
+                        <div class="offer-img">
+                            <img src="./assets/img/offer-place/9.jpg" alt="offer" class="img-fluid w-100 h-100 rounded-top-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0 py-3 section-1">
+                   <div class="col">
+                    <div class="content">
+                        <div class="footer-heading fw-semibold">Bangkok</div>
+                        <div class="copy-right lh-2">Round Trip | May 19 - Jun 19</div>
+                        <div class="bank-title fw-bold">$1,016.36</div>
+                    </div>
+                   </div>
+                   <div class="col-auto  d-flex justify-content-end align-items-end  ">
+                    <div class="button"><a href="javascript:;" class="btn z-3 position-relative customBtn outlinBtn flex-nowrap "> Book Now</a></div>
+                    <a href="cartdetails.html" class="stretched-link"> </a>
+                   </div>
+                </div>
+        </div>
+           </div>
+        </div>
+       
+    </div>
+  </div>
+
+    <!-- download app  -->
+
+    <div class="container-fluid py-5 download-app">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-7 order-md-1 order-2">
+                    <div class="content">
+                        <div class="row py-3">
+                            <div class="col-12">
+                                <div class="download-title fw-bold">Get more out of Kiwi.com with our mobile app</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="small-title">Ready. Set. Go! Your Rewards Program is Here..</div>
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-12">
+                               <div class="row align-items-center">
+                                <div class="col-6">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class="col-auto">
+                                            <div class="check rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check text-white"></i></div>
+                                        </div>
+                                        <div class="col px-0">
+                                            <div class="small-title">Download boarding passes</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center justify-content-center">
+                                        <div class="col-auto">
+                                            <div class="check rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check text-white"></i></div>
+                                        </div>
+                                        <div class="col px-0">
+                                            <div class="small-title">Download boarding passes</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center justify-content-center">
+                                        <div class="col-auto">
+                                            <div class="check rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check text-white"></i></div>
+                                        </div>
+                                        <div class="col px-0">
+                                            <div class="small-title">Download boarding passes</div>
+                                        </div>
+                                    </div>
+                                </div>   <div class="col-6">
+                                    <div class="row  align-items-center justify-content-center">
+                                        <div class="col-auto">
+                                            <div class="check rounded-circle d-flex align-items-center justify-content-center"><i class="fa-solid fa-check text-white"></i></div>
+                                        </div>
+                                        <div class="col px-0">
+                                            <div class="small-title">Download boarding passes</div>
+                                        </div>
+                                    </div>
+                                </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col-12">
+                                <div class="download-btn">
+                                    <a href="javascript:;" class=""><img src="./assets/img/downloadApp/AppStoreButtonEN.webp" alt=""></a>
+                                    <a href="javascript:;" class=""><img src="./assets/img/downloadApp/GooglePlayButtonEN.webp" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5  pb-md-0  order-md-2 order-1">
+                    <div class="row ">
+                        <div class="col-12 ">
+                            <div class="download-img "><img src="./assets/img/downloadApp/Group_3-removebg-preview.png" alt="download-app" class=" img-fluid w-100 "></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+      </div>
+<!-- popluar place  -->
+<div class="container-fluid py-md-3 py-0  popluar-place">
+    <div class="container shadgow  rounded-2">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 py-3">
+                        <div class="popluar-title main-card-title fw-bolder">Handpicked Collections for You</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row owl-carousel popluarPlace mx-0">
+            <div class="col-12 item h-100">
+                <div class="card position-relative popluar-image h-100">
+                    <div class="card-body pt-5 d-flex align-items-end">
+                        <div class="row pt-5">
+                            <!-- <div class="col-auto py-1">
+                                        <div class="cards-title bg-white px-2 small-title  rounded-2 py-1 fw-bold ">TOP 1</div>
+                            </div> -->
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-auto popluar-pera-text smalltitle text-white fw-bold ">Stay in & Around Delhi for a Weekend Getway</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 item h-100">
+                <div class="card position-relative popluar-image-2 h-100">
+                    <div class="card-body pt-5 d-flex align-items-end">
+                        <div class="row pt-5">
+                            <!-- <div class="col-12">
+                                <div class="row">
+                                    <div class="col-auto ">
+                                        <div class="cards-title bg-white px-2 small-title  rounded-1 fw-bold ">TOP 2</div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-auto popluar-pera-text smalltitle text-white fw-bold ">Stay in & Around Mumbai for a Weekend Getway</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 item h-100">
+                <div class="card position-relative popluar-image-4 h-100">
+                    <div class="card-body pt-5 d-flex align-items-end">
+                        <div class="row pt-5">
+                            <!-- <div class="col-12">
+                                <div class="row">
+                                    <div class="col-auto ">
+                                        <div class="cards-title bg-white px-2 small-title  rounded-1 fw-bold ">TOP 5</div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-auto popluar-pera-text smalltitle text-white fw-bold ">Beach Destination</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 item h-100">
+                <div class="card position-relative popluar-image-5 h-100 ">
+                    <div class="card-body pt-5 d-flex align-items-end">
+                        <div class="row pt-5">
+                            <!-- <div class="col-12">
+                                <div class="row">
+                                    <div class="col-auto ">
+                                        <div class="cards-title bg-white px-2 small-title  rounded-1 fw-bold ">TOP 4</div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-auto popluar-pera-text smalltitle text-white fw-bold ">Weekend Getway</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 item h-100">
+                <div class="card position-relative popluar-image-6 h-100">
+                    <div class="card-body pt-5 d-flex align-items-end">
+                        <div class="row pt-5">
+                            <!-- <div class="col-12">
+                                <div class="row">
+                                    <div class="col-auto ">
+                                        <div class="cards-title bg-white px-2 small-title  rounded-1 fw-bold ">TOP 1</div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-auto popluar-pera-text smalltitle text-white fw-bold ">Stay in & Around Delhi for a Weekend Getway</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 item h-100 ">
+                <div class="card position-relative popluar-image-7 h-100">
+                    <div class="card-body pt-5 d-flex align-items-end">
+                        <div class="row pt-5">
+                            <!-- <div class="col-12">
+                                <div class="row">
+                                    <div class="col-auto ">
+                                        <div class="cards-title bg-white px-2 small-title  rounded-1 fw-bold ">TOP 1</div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-auto popluar-pera-text smalltitle text-white fw-bold ">Stay in & Around Delhi for a Weekend Getway</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- footer  -->
+<footer class="container-fluid shadow footer py-3">
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-3 col-sm-6 col-12 ">
+                <div class="row ">
+                    <div class="col-12">
+                        <div class="footer-logo ">
+                            <a class="navbar-brand" href="javascript:;"><img src="./assets/img/hero-section/logo.png" alt="logo"
+                                    class="img-fluid w-100"></a>
+                        </div>
+                    </div>
+                    <div class="col-12 small-title py-3">
+                        <div class=" fotter-subheading fw-semibold">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
+                     </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 ">
+                <div class="row pt-lg-4 pt-2">
+                    <div class="col-12">
+                        <div class="footer-heading fw-bold ">Information</div>
+                    </div>
+                    <div class="col-12 py-2">
+                        <div  class="footer-list">
+                            <ul class="list-unstyled">
+                                <li class=" position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative fw-semibold"> About</a></li>
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative  fw-semibold"> Service</a></li>
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative  fw-semibold"> Terms and Conditions</a></li>
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative  fw-semibold"> Become a partner</a></li>
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative  fw-semibold"> Best Price Guarantee</a></li>
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative  fw-semibold"> Privacy and Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 ">
+                <div class="row pt-lg-4 pt-2">
+                    <div class="col-12">
+                        <div class="footer-heading fw-bold">Customer Support</div>
+                    </div>
+                    <div class="col-12 py-2">
+                        <div class="footer-list">
+                            <ul class="list-unstyled">
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative fw-semibold"> FAQ</a></li>
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative fw-semibold"> Payment Option</a></li>
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative fw-semibold"> Booking Tips</a></li>
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative fw-semibold"> How it works</a></li>
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative fw-semibold"> Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12">
+                <div class="row pt-lg-4 py-0">
+                    <div class="col-12 py-md-2 py-0">
+                        <div class="footer-heading fw-bold ">Have a Questions?</div>
+                    </div>
+                    <div class="col-12 py-1">
+                        <a href="javascript:;" class="fotter-subheading ela d-flex align-items-center text-decoration-none  fw-semibold"> <span><i class="fa-solid fa-location-dot text-black pe-3"></i></span> 203 Fake St. Mountain View, San Francisco, California, USA</a>
+                    </div>
+                    <div class="col-12 py-1">
+                        <div class="col-12 py-1">
+                            <a href="javascript:;" class="fotter-subheading ela d-flex align-items-center text-decoration-none  fw-semibold"> <span><i class="fa-solid fa-phone text-black pe-3"></i></span> +2 392 3929 210</a>
+                        </div>
+                    </div>
+                    <div class="col-12 py-1">
+                        <a href="javascript:;" class="fotter-subheading ela d-flex align-items-center text-decoration-none fw-semibold "> <span><i class="fa-regular fa-envelope text-black pe-3"></i></span> info@yourdomain.com</a>
+                    </div>
+                    <div class="col-12 py-lg-3 py-2 py-">
+                        <div class="social-icon text-white ">
+                            <ul class="d-flex gap-2  list-unstyled m-0">
+                                <li
+                                    class=" rounded-circle d-flex justify-content-center align-items-center facebook">
+                                    <a href="javascript:;"
+                                        class="d-flex justify-content-center align-items-center text-decoration-none"><i
+                                            class="fa-brands fa-facebook   fac"></i></a></li>
+                                <li
+                                    class=" rounded-circle d-flex justify-content-center align-items-center insta">
+                                    <a href="javascript:;"
+                                        class="d-flex justify-content-center align-items-center text-decoration-none"><i
+                                            class="fa-brands fa-instagram  "></i></a></li>
+                                <li
+                                    class=" rounded-circle d-flex justify-content-center align-items-center twitter">
+                                    <a href="javascript:;"
+                                        class="d-flex justify-content-center align-items-center text-decoration-none"><i
+                                            class="fa-brands fa-twitter "></i></a></li>
+                                <li
+                                    class=" rounded-circle d-flex justify-content-center align-items-center location">
+                                    <a href="javascript:;"
+                                        class="d-flex justify-content-center align-items-center text-decoration-none"><i
+                                            class="fa-solid fa-location-dot "></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="">
+           
+            <div class="col-12 d-flex justify-content-center align-items-center py-md-0 py-2" >
+                <div class="copy-right">Copyright <span>&#169;</span>2023 All rights reserved </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="./assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/bootstrap/slider/js/owl.carousel.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

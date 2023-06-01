@@ -1,0 +1,404 @@
+@media screen and (max-width:1191px) {
+    .circle {
+        height: 594px;
+        width: 600px;
+        left: -266px;
+    }
+    .small-image {
+        bottom: 8%;
+    }
+    .user{
+        top:25%;
+    }
+    .tree{
+        top: 0;
+        right: 15%;
+    }
+    .heart{
+        bottom: 10%;
+    }
+    
+    .hero-content .pera br{
+        display: none;
+    }
+    .main-card-title {
+        font-size: 28px;
+    }
+    .subscribe-title,
+    .offers-card .bank-title {
+        font-size: 23px;
+    }
+    .card-pera {
+        font-size: 13px;
+    }
+    .download-title{
+        font-size: 22px;
+    }
+    .about-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .about-img{
+        max-width: 400px;
+    }
+    .aboutImg-2 {
+        right: -77px;
+    }  
+    .about-img .aboutImg-2{
+        max-width: 350px !important;
+    }
+}
+
+@media screen and (max-width:991px){
+    .hero-image {
+        width: 399px;
+        height: 416px;
+    }
+.icons{
+    bottom: 51%;
+}
+.icons a{
+    font-size: 20px;
+}
+    .dot{
+        bottom: 23%;
+    }
+    .logo-img{
+        opacity: 0;
+    }
+    .user {
+        top: 30%;
+        right: 14%;
+    }
+    .hero-content .title {
+        font-size: 40px;
+        line-height: 47px;
+    }
+    circle {
+        height: 602px;
+        width: 612px;
+        left: -265px;
+    }
+    .tree{
+        right: 28%;
+        font-size: 20px;
+    }
+    .small-image{
+        bottom: 23%;
+    }
+    .message{
+        bottom: 3%;
+    }
+    .main-card-title {
+        font-size: 26px;
+    }
+    .small-title{
+        font-size: 13px;
+    }
+    .footer-heading{
+        font-size: 17px;
+    }
+    .bank-title {
+        font-size: 22px;
+    }
+    .offerimg {
+        height: 157px;
+    }
+    .download-title{
+        font-size: 18px;
+    }
+    .card-btn{
+        left: 40%;
+    }
+
+.download-img {
+    height: 235px;
+}
+.counter-pera {
+    font-size: 14px !important;
+    line-height: normal;
+}
+.accordion-button{
+    font-size: 14px;
+}
+.counter .counter-icon{
+    font-size: 22px;
+}
+.counter .counter-value{
+    font-size: 20px;
+}
+.counter .counter-title {
+    font-size: 12px;
+    margin: -8px 0 0 27px;
+}
+.categories-title::before{
+    top: 10px;
+}
+.polices .accordion-button{
+    font-size: 18px;
+}
+}
+@media screen and (max-width:767px) {
+    .navbar-nav .nav-item a {
+        font-size: 14px;
+    }
+    .offcanvas{
+        width: 280px !important;
+    }
+    .tree{
+       
+        right: 25%;
+    }
+    .user {
+        top: 30% !important;
+        right: 10%;
+    }
+    .dot{
+        width: 10px;
+        height: 10px;
+    }
+    .user ul li {
+        height: 25px;
+        width: 25px;
+    }
+    .icons{
+        top:5%;
+     left: 10%;
+    }
+    .icons a{
+        font-size: 20px;
+    }
+    .small-image {
+        bottom: 51% ;
+    }
+    .message{
+        bottom: 10%;
+    }
+    .message ul li{
+        width: 30px;
+        height: 30px;
+    }
+    .hero-content .title {
+        font-size: 33px;
+        line-height: 41px;
+    }
+    .booking-icon ul li {
+        height: 40px;
+        width: 41px;}
+        .image {
+            width: 72px;
+            height: 100%;
+            border: 2px solid white;
+        }
+        .heart ul li{
+            width: 30px;
+            height: 30px;
+        }
+    .circle{
+        border: 80px solid;
+    }
+    .navbar .nav-btn {
+        font-size: 14px;
+    }
+    .main-card-title{
+        font-size: 21px;
+    }
+    
+.main-card-title span {
+    font-size: 14px;
+}
+.card-btn {
+    left: 34%;
+}
+.ticket-booking .nav .button-style .icon-image {
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+.offer-img{
+    height: 157px;
+    }
+    .bank-title {
+        font-size: 20px;
+    }
+    .footer-heading{
+        font-size: 16px;
+    }
+    .cardButton{
+        font-size: 12px;
+    }
+    .about-title {
+        font-size: 22px;
+        line-height: normal;
+    }
+    .fotter-subheading{
+        font-size: 14px;
+    }
+    .counter-pera {
+        width: 100%;
+    }
+    .pera{
+        font-size: 14px;
+    }
+    .faq-img{
+        width: 400px;
+    }
+   .side-nav{
+    right: 80px;
+   }
+   .help-title{
+    font-size: 38px !important;
+   }
+   .polices .accordion-button{
+    font-size: 16px;
+   }
+}
+@media screen and (max-width:575px) {
+ .title {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .pera{
+        font-size: 13px;
+        line-height: 23px;
+    }
+    image {
+        width: 341px;
+        height: 353px;
+    }
+
+    .hero-content {
+        margin-top: -20px;
+    }
+  
+    .image{
+        width: 50px;
+        
+    }
+    .small-image{
+        left: 10%;
+    }
+  .user{
+    right:25%;
+  }
+  .heart{
+    bottom: 30%;
+  }
+  .dot{
+    bottom: 40%;
+  }
+  .card-row {
+    padding-top: 61px;
+}
+.border-style1 .small-title{
+    font-size: 14px;
+}
+  .small-title1{
+    font-size: 12px !important;
+  }   
+  .owl-nav{
+    top: -43px;
+  }
+  .footer-heading {
+    font-size: 15px;
+}
+.fotter-subheading {
+    font-size: 13px;
+}
+.copy-right{
+    font-size: 10px;
+}
+.about-title{
+    font-size: 18px;
+}
+.about-img {
+    max-width: 305px;
+}
+.about-img .aboutImg-2{
+    max-width: 270px !important;
+    right: -80px;
+}
+.faq-img{
+    width: 300px;
+}
+.counter .counter-icon{
+    font-size: 16px;
+}
+.counter .counter-value {
+    font-size: 16px;
+}
+.counter .counter-content {
+    padding: 12px;
+    margin: 0px 0 10px;
+}
+.accordion-item .pera{
+    font-size: 12px;
+}
+.side-nav {
+    right: 0px !important;
+}
+
+.title{
+    font-size: 32px;
+}
+.categories-title::before{
+    top: 6px;
+}
+.author-icon ul li a{
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 16px !important;
+    line-height: normal !important;
+}
+.help-title {
+    font-size: 27px;
+    line-height: normal;
+}
+.polices .accordion-button{
+    font-size: 14px;
+}
+}
+@media screen and (max-width:405px) {
+    .circle{
+        display: none;
+    }
+    .hero-image {
+        width: 307px;
+        height: 352px;
+    }
+ .card-btn{
+    left: 29%;
+ }
+ .main-card-title {
+    font-size: 16px;
+}
+.download-img {
+    height: 145px;
+}
+.about-img {
+    max-width: 242px;
+}
+.aboutImg-2 {
+  
+    right: -60px;
+}
+.counter-card{
+    width: 100% !important;
+    padding-top: 20px;
+}
+
+}
+
+@media screen and (max-width:360px){
+    .select-city .select-city-1{
+        width: 100%;
+    }
+    .switch {
+
+        top: 85px;
+        left: -6%;
+    }
+    .card-btn {
+        left: 25%;
+    }
+}

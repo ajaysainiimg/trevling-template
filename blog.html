@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="stylesheet" href="./assets/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg bg-transparent container-fluid" aria-label="Offcanvas navbar large">
+        <div class="container px-0">
+            <div class="d-flex justify-content-center align-items-center gap-lg-4 gap-2">
+                <a class="navbar-brand nav-btn fw-semibold active d-flex align-items-center" href="javascript:;">Register</a>
+                <a class="navbar-brand nav-btn fw-semibold  d-flex align-items-center" href="javascript:;">Sign in</a>
+            </div>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class=""><i class="fa-solid fa-bars-staggered"></i></span>
+            </button>
+            <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header shadow-sm">
+                    <div class="logo-img pt-lg-0 pt-2 opacity-100">
+                        <a class="navbar-brand" href="index.html"><img src="./assets/img/hero-section/logo.png" alt="logo"
+                                class="img-fluid w-100"></a>
+                    </div>
+                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class=" navbar-nav justify-content-end flex-grow-1 pe-5 gap-lg-4 gap-2 align-items-lg-center align-items-start">
+                        <li class="nav-item">
+                            <a class="nav-link position-relative  fw-semibold" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative fw-semibold" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative fw-bold active" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative fw-semibold" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="logo-img pt-lg-0 pt-2">
+                        <a class="navbar-brand" href="javascript:;"><img src="./assets/img/hero-section/logo.png" alt="logo" class="img-fluid w-100"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!-- about-hero  -->
+<div class="container-fluid blog">
+    <div class="container ">
+        <div class="row py-lg-5 py-md-4 py-2">
+        <div class="col-auto mx-auto py-lg-5 py-3">
+            <div class="text-white title fw-bold">Latest Details</div>
+            <nav aria-label="breadcrumb ">
+                <ol class="breadcrumb d-flex justify-content-center">
+                  <li class="breadcrumb-item text-center"><a href="./index.html" class="text-white text-decoration-none">Home</a></li>
+                  <li class="breadcrumb-item active text-center " style="color: #FFB240;" aria-current="page">Our Blog</li>
+                </ol>
+              </nav>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- services-area  -->
+<div class="container-fluid py-lg-5 py-3">
+    <div class="container ">
+        <div class="row g-lg-5">
+            <div class="col-12 d-lg-none d-block text-end ">
+                <button class="side-nav bg-white border-0 shadow-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="./assets/img/details/icons8-filter-50.png" alt="fillter" class="img-fluid w-100"></button>
+            </div>
+            <div class="col-lg-8 pt-lg-0 ">
+                <div class="row py-lg-0 py-md-4 py-3">
+                    <div col-12>
+                        <div class="services-img"><img src="./assets/img/blog/blog_01.jpg" alt="services-img" class="w-100 img-fluid rounded-2"></div>
+                        <div class="about-title fw-bold py-3">Purchase flight ticket easily & securely</div>
+                        <div class="pera">Enjoy an even safer and more comfortale travel experience with the Top class Airlines mobile apps You can complete all travel processes such as purchasing a ticket the creating a mobile boarding pass, or checking in via a single channel.</div>
+                        <div class="read-more py-2"><a href="#" class="text-decoration-none pera ">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a></div>
+                    </div>
+                </div>
+                <div class="row py-4">
+                    <div class="col-sm-6">
+                        <div class=" travel-img"><img src="./assets/img/blog/blog_2.jpg" alt="travel-img" class="img-fluid w-100 rounded-2"></div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="sub-heading-about position-relative my-2 ps-3">User Experience</div>
+                        <div class="footer-heading fw-bold ">Comfortale travel experience </div>
+                        <div class="pera py-2">Lorem ipsum dolor sit amet consectetur  inventore?</div>
+                        <div class="pera ">Lorem ipsum dolor sit amet consectetur  inventore? Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                        <div class="py-3 d-md-block d-none">
+                            <ul class="list-unstyled travel-icon">
+                                <li class="pera"><span class="pe-3"><i class="fa-solid fa-bullseye"></i></span>People live with nature</li>
+                                <li class="pera"><span class="pe-3"><i class="fa-solid fa-bullseye"></i></span>People live with nature</li>
+                                <li class="pera"><span class="pe-3"><i class="fa-solid fa-bullseye"></i></span>People live with nature</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-3 py-lg-0 py-3">
+                    <div class="col-12">
+                        <div class="sub-heading-about position-relative my-2 ps-3">WHY AIR GEAIR</div>
+                        <div class="footer-heading fw-bold ">Our Great Flight Options </div>
+                        <div class="pera py-2">Lorem ipsum dolor sit amet consectetur  inventore? Lorem ipsum dolor sit amet consectetur  inventore? Lorem ipsum dolor sit.</div>
+                    </div>
+                    <div class="col-12">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item position-relative mb-3 border-0 flight-review">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span class="recent-name pe-2"><strong>01.</strong></span>
+                                   Pre-Book Your Baggage Donating a Small
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                 <div class="row">
+                                    <div class="col-sm-auto overflow-hidden ">
+                                        <div class="flight-review overflow-hidden rounded-2"><img src="./assets/img/blog/blog_img02 (1).jpg" alt="flight-review-img" class="img-fluid w-100 rounded-2"></div>
+                                    </div>
+                                    <div class="col-sm pt-sm-0 pt-3">
+                                        <div class="flight-content">
+                                            <div class="flight-meta">
+                                                <ul class=" list-unstyled d-flex align-items-center flex-wrap gap-2 mb-1">
+                                                    <li class=" copy-right "><span class="pe-1"><i class="fa-regular fa-user"></i></span> Emely Watson</li>
+                                                    <li class="copy-right "><span class="pe-1"><i class="fa-regular fa-calendar-days"></i></span>February 19, 2022</li>
+                                                </ul>
+                                            </div>
+                                            <div><a href="#" class="text-decoration-none footer-heading fw-semibold">Happy International Country Flight Attendant Day</a></div>
+                                            <div class="pera pt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus aliquam laborum temporibus ex explicabo totam?</div>
+                                            <div class="copy-right recent-name py-2">Alex Jonson</div>
+                                        </div>
+                                    </div>
+                                 </div>
+                              </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item mb-3 border-0 position-relative flight-review">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button shadow-none collapsed flight-review" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span class="recent-name pe-2"><strong>02.</strong></span>
+                                    Reserve preferred seat!
+                                </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-sm-auto overflow-hidden order-1">
+                                            <div class="flight-review overflow-hidden rounded-2"><img src="./assets/img/blog/blog_img02 (1).jpg" alt="flight-review-img" class="img-fluid w-100 rounded-2"></div>
+                                        </div>
+                                        <div class="col col-sm pt-sm-0 pt-3 order-0">
+                                            <div class="flight-content">
+                                                <div class="flight-meta">
+                                                    <ul class=" list-unstyled d-flex align-items-center flex-wrap gap-2 mb-1">
+                                                        <li class=" copy-right "><span class="pe-1"><i class="fa-regular fa-user"></i></span> Emely Watson</li>
+                                                        <li class="copy-right "><span class="pe-1"><i class="fa-regular fa-calendar-days"></i></span>February 19, 2022</li>
+                                                    </ul>
+                                                </div>
+                                                <div><a href="#" class="text-decoration-none footer-heading fw-semibold">Happy International Country Flight Attendant Day</a></div>
+                                                <div class="pera pt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus aliquam laborum temporibus ex explicabo totam?</div>
+                                                <div class="copy-right recent-name py-2">Alex Jonson</div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item mb-3 border-0 position-relative flight-review ">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span class="recent-name pe-2"><strong>03.</strong></span>
+                                    Enjoy stress-free travel
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                                <div class="accordion-body rounded-0">
+                                    <div class="row">
+                                        <div class="col-sm-auto overflow-hidden ">
+                                            <div class="flight-review overflow-hidden rounded-2"><img src="./assets/img/blog/blog_img02 (1).jpg" alt="flight-review-img" class="img-fluid w-100 rounded-2"></div>
+                                        </div>
+                                        <div class="col-sm pt-sm-0 pt-3">
+                                            <div class="flight-content">
+                                                <div class="flight-meta">
+                                                    <ul class=" list-unstyled d-flex align-items-center flex-wrap gap-2 mb-1">
+                                                        <li class=" copy-right "><span class="pe-1"><i class="fa-regular fa-user"></i></span> Emely Watson</li>
+                                                        <li class="copy-right "><span class="pe-1"><i class="fa-regular fa-calendar-days"></i></span>February 19, 2022</li>
+                                                    </ul>
+                                                </div>
+                                                <div><a href="#" class="text-decoration-none footer-heading fw-semibold">Happy International Country Flight Attendant Day</a></div>
+                                                <div class="pera pt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus aliquam laborum temporibus ex explicabo totam?</div>
+                                                <div class="copy-right recent-name py-2">Alex Jonson</div>
+                                            </div>
+                                        </div>
+                                     </div>
+                              </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 py-lg-5 py-md-4 py-3">
+                        <div class="row ">
+                            <div class="col-6 ">
+                                <div class="author-content position-relative d-flex justify-content-center align-items-center">
+                                    <div class="author-img position-relative"><img src="./assets/img/blog/author-img.jpg" alt="author-img" class="img-fluid w-100"></div>
+                                    <div class="social-icon position-absolute author-icon">
+                                        <ul class="d-flex list-unstyled m-0 align-items-center justify-content-center">
+                                            <li class=" rounded-circle d-flex justify-content-center align-items-center facebook"> <a href="javascript:;" class="d-flex justify-content-center align-items-center text-decoration-none border-1 border border-light rounded-0 bg-white"><i class="fa-brands fa-facebook   fac"></i></a></li>
+                                            <li class=" rounded-circle d-flex justify-content-center align-items-center insta"> <a href="javascript:;" class="d-flex justify-content-center align-items-center text-decoration-none border-1 border border-light rounded-0 bg-white"><i class="fa-brands fa-instagram  "></i></a></li>
+                                            <li class=" rounded-circle d-flex justify-content-center align-items-center twitter"> <a href="javascript:;"class="d-flex justify-content-center align-items-center text-decoration-none border-1 border border-light rounded-0 bg-white"><i class="fa-brands fa-twitter "></i></a></li>
+                                            <li class=" rounded-circle d-flex justify-content-center align-items-center location"><a href="javascript:;"class="d-flex justify-content-center align-items-center text-decoration-none border-1 border border-light rounded-0 bg-white"><i class="fa-solid fa-location-dot "></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="footer-heading pt-md-5 pt-4 text-center fw-bold">Thoms may</div>
+                                <div class="pera text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloribus odit praesentium quis, error optio!</div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="author-content position-relative d-flex justify-content-center align-items-center">
+                                    <div class="author-img position-relative"><img src="./assets/img/blog/author-img.jpg" alt="author-img" class="img-fluid w-100"></div>
+                                    <div class="social-icon position-absolute author-icon">
+                                        <ul class="d-flex list-unstyled m-0 align-items-center justify-content-center">
+                                            <li class=" rounded-circle d-flex justify-content-center align-items-center facebook"> <a href="javascript:;" class="d-flex justify-content-center align-items-center text-decoration-none border-1 border border-light rounded-0 bg-white"><i class="fa-brands fa-facebook   fac"></i></a></li>
+                                            <li class=" rounded-circle d-flex justify-content-center align-items-center insta"> <a href="javascript:;" class="d-flex justify-content-center align-items-center text-decoration-none border-1 border border-light rounded-0 bg-white"><i class="fa-brands fa-instagram  "></i></a></li>
+                                            <li class=" rounded-circle d-flex justify-content-center align-items-center twitter"> <a href="javascript:;"class="d-flex justify-content-center align-items-center text-decoration-none border-1 border border-light rounded-0 bg-white"><i class="fa-brands fa-twitter "></i></a></li>
+                                            <li class=" rounded-circle d-flex justify-content-center align-items-center location"><a href="javascript:;"class="d-flex justify-content-center align-items-center text-decoration-none border-1 border border-light rounded-0 bg-white"><i class="fa-solid fa-location-dot "></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="footer-heading pt-md-5 pt-4 text-center fw-bold">Thoms may</div>
+                                <div class="pera text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloribus odit praesentium quis, error optio!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 offcanvas-lg offcanvas-end "  tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"  data-bs-target="#offcanvasRight" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-block">
+                            <div class="search row py-lg-4 py-md-4 py-3 bg-light rounded-2 px-3 shadow-sm  ">
+                                <div class="bank-title categories-title position-relative col-auto fw-semibold">Search</div>
+                                <div class="col-12 py-2">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control border-0 py-3 shadow-none" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2" id="search1">
+                                        <button class="px-4 border-0 shadow-none text-white" type="search" id="button-addon2 " for="#search1"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categories-card row py-lg-4 py-md-4 py-3 bg-light rounded-2 px-3 my-5 shadow-sm  ">
+                                <div class="bank-title categories-title position-relative col-auto fw-semibold">Categories</div>
+                                <div class="col-12 cart-list pt-4">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-4"><a href="#" class="text-decoration-none pera d-flex align-items-center mb-4">Insureance  <span class="ms-auto"><i class="fa-solid fa-angles-right"></i></span> </a></li>
+                                        <li class="mb-4"><a href="#" class="text-decoration-none pera d-flex align-items-center mb-4">Destinations <span class="ms-auto"><i class="fa-solid fa-angles-right"></i></span> </a></li>
+                                        <li class="mb-4"><a href="#" class="text-decoration-none pera d-flex align-items-center mb-4">Flights  <span class="ms-auto"><i class="fa-solid fa-angles-right"></i></span> </a></li>
+                                        <li class="mb-4"><a href="#" class="text-decoration-none pera d-flex align-items-center mb-4">Top Airlines  <span class="ms-auto"><i class="fa-solid fa-angles-right"></i></span> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row py-lg-4 py-md-4 py-3 bg-light rounded-2 px-3 shadow-sm RecentPost gy-3 my-5   ">
+                                <div class="bank-title categories-title position-relative col-auto fw-semibold">Recent Post</div>
+                                <div class="col-12 recent-section">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <div class="recent-img position-relative"><a href="#"> <img src="./assets/img/blog/rc_post_img01.jpg" alt="recent-img" class="img-fluid w-100 rounded-2"></a> </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="copy-right"> <span class=""><i class="fa-regular fa-bell"></i></span> Mar 10, 2022</div>
+                                            <div><a href="#" class="text-decoration-none footer-heading fw-bold recent-heading">Car Rental Provider</a></div>
+                                            <div class="copy-right recent-name py-2">Alex Jonson</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 recent-section">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <div class="recent-img position-relative"><a href="#"> <img src="./assets/img/blog/rc_post_img02.jpg" alt="recent-img" class="img-fluid w-100 rounded-2"></a> </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="copy-right"> <span class=""><i class="fa-regular fa-bell"></i></span> Mar 10, 2022</div>
+                                            <div><a href="#" class="text-decoration-none footer-heading fw-bold recent-heading">Purchase flight ticket</a></div>
+                                            <div class="copy-right recent-name py-2">Alex Jonson</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 recent-section">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <div class="recent-img position-relative"><a href="#"> <img src="./assets/img/blog/rc_post_img03.jpg" alt="recent-img" class="img-fluid w-100 rounded-2"></a> </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="copy-right"> <span class=""><i class="fa-regular fa-bell"></i></span> Mar 10, 2022</div>
+                                            <div><a href="#" class="text-decoration-none footer-heading fw-bold recent-heading">Services in 7 differentr</a></div>
+                                            <div class="copy-right recent-name py-2">Alex Jonson</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row py-lg-4 py-md-4 py-3 px-3 mt-5 rounded-2 SubscribeNewsletter shadow-sm">
+                                <div class="col-auto mx-auto subscribe-img"><img src="./assets/img/blog/sn_icon.png" alt="Subscribe" class="img-fluid w-100"></div>
+                                <div class="col-12 text-white subscribe-title bank-title text-center pt-3">Subscribe Newsletter</div>
+                                <div class="col-12 text-white pera text-center fw-light">Signup For Latest News</div>
+                                <div class="col-12 mt-4">
+                                    <form>
+                                        <div class="mb-3">
+                                          <input type="email" class="form-control text-center py-3 shadow-none rounded-0" id="exampleInputPassword1" placeholder="Enter Your Email">
+                                        </div>
+                                        <button type="submit " class="rounded-2 shadow-none border-0 subscribe-btn w-100 py-3 text-white">SUBSCRIBE</button>
+                                      </form>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer  -->
+<footer class="container-fluid shadow footer py-3">
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-3 col-sm-6 col-12 ">
+                <div class="row ">
+                    <div class="col-12">
+                        <div class="footer-logo ">
+                            <a class="navbar-brand" href="javascript:;"><img src="./assets/img/hero-section/logo.png" alt="logo"
+                                    class="img-fluid w-100"></a>
+                        </div>
+                    </div>
+                    <div class="col-12 small-title py-3">
+                        <div class=" fotter-subheading fw-semibold">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
+                     </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 ">
+                <div class="row pt-lg-4 pt-2">
+                    <div class="col-12">
+                        <div class="footer-heading fw-bold ">Information</div>
+                    </div>
+                    <div class="col-12 py-2">
+                        <div  class="footer-list">
+                            <ul class="list-unstyled">
+                                <li class=" position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative fw-semibold"> About</a></li>
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative  fw-semibold"> Service</a></li>
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative  fw-semibold"> Terms and Conditions</a></li>
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative  fw-semibold"> Become a partner</a></li>
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative  fw-semibold"> Best Price Guarantee</a></li>
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative  fw-semibold"> Privacy and Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 ">
+                <div class="row pt-lg-4 pt-2">
+                    <div class="col-12">
+                        <div class="footer-heading fw-bold">Customer Support</div>
+                    </div>
+                    <div class="col-12 py-2">
+                        <div class="footer-list">
+                            <ul class="list-unstyled">
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative fw-semibold"> FAQ</a></li>
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative fw-semibold"> Payment Option</a></li>
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative fw-semibold"> Booking Tips</a></li>
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative fw-semibold"> How it works</a></li>
+                                <li class="position-relative"><a href="javascript:;" class="text-decoration-none fotter-subheading position-relative fw-semibold"> Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12">
+                <div class="row pt-lg-4 py-0">
+                    <div class="col-12 py-md-2 py-0">
+                        <div class="footer-heading fw-bold ">Have a Questions?</div>
+                    </div>
+                    <div class="col-12 py-1">
+                        <a href="javascript:;" class="fotter-subheading ela d-flex align-items-center text-decoration-none  fw-semibold"> <span><i class="fa-solid fa-location-dot text-black pe-3"></i></span> 203 Fake St. Mountain View, San Francisco, California, USA</a>
+                    </div>
+                    <div class="col-12 py-1">
+                        <div class="col-12 py-1">
+                            <a href="javascript:;" class="fotter-subheading ela d-flex align-items-center text-decoration-none  fw-semibold"> <span><i class="fa-solid fa-phone text-black pe-3"></i></span> +2 392 3929 210</a>
+                        </div>
+                    </div>
+                    <div class="col-12 py-1">
+                        <a href="javascript:;" class="fotter-subheading ela d-flex align-items-center text-decoration-none fw-semibold "> <span><i class="fa-regular fa-envelope text-black pe-3"></i></span> info@yourdomain.com</a>
+                    </div>
+                    <div class="col-12 py-lg-3 py-2 py-">
+                        <div class="social-icon text-white ">
+                            <ul class="d-flex gap-2  list-unstyled m-0">
+                                <li
+                                    class=" rounded-circle d-flex justify-content-center align-items-center facebook">
+                                    <a href="javascript:;"
+                                        class="d-flex justify-content-center align-items-center text-decoration-none"><i
+                                            class="fa-brands fa-facebook   fac"></i></a></li>
+                                <li
+                                    class=" rounded-circle d-flex justify-content-center align-items-center insta">
+                                    <a href="javascript:;"
+                                        class="d-flex justify-content-center align-items-center text-decoration-none"><i
+                                            class="fa-brands fa-instagram  "></i></a></li>
+                                <li
+                                    class=" rounded-circle d-flex justify-content-center align-items-center twitter">
+                                    <a href="javascript:;"
+                                        class="d-flex justify-content-center align-items-center text-decoration-none"><i
+                                            class="fa-brands fa-twitter "></i></a></li>
+                                <li
+                                    class=" rounded-circle d-flex justify-content-center align-items-center location">
+                                    <a href="javascript:;"
+                                        class="d-flex justify-content-center align-items-center text-decoration-none"><i
+                                            class="fa-solid fa-location-dot "></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="">
+           
+            <div class="col-12 d-flex justify-content-center align-items-center py-md-0 py-2" >
+                <div class="copy-right">Copyright <span>&#169;</span>2023 All rights reserved </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- counter script  -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+</body>
+</html>
